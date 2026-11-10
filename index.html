@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="TechSupport – dein Ansprechpartner rund um Technik. Persönliche Unterstützung bei deinen technischen Fragen."
+    >
+    <meta name="theme-color" content="#101923">
+    <title>TechSupport – Dein Ansprechpartner rund um Technik</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Hauptnavigation">
+        <a class="brand" href="#start" aria-label="TechSupport – zur Startseite">
+          <span class="brand-mark" aria-hidden="true">T</span>
+          <span>Tech<span class="brand-accent">Support</span></span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-label="Navigation öffnen"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a class="nav-link active" href="#start">Startseite</a>
+          <a class="nav-link" href="#ueber-mich">Über mich</a>
+          <a class="nav-link" href="#kontakt">Kontakt</a>
+          <a class="nav-cta" href="#kontakt">Kontakt aufnehmen <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="start" aria-labelledby="hero-title">
+        <div class="container hero-content">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Technikhilfe, die weiterbringt</p>
+            <h1 id="hero-title">Willkommen bei<br><span class="hero-highlight">TechSupport</span></h1>
+            <p class="hero-subtitle">Dein Ansprechpartner rund um Technik.</p>
+            <p class="hero-description">
+              Technik soll dir helfen – nicht im Weg stehen. Ich unterstütze dich
+              persönlich und verständlich bei deinen technischen Fragen.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#kontakt">
+                Kontakt aufnehmen <span class="button-arrow" aria-hidden="true">↗</span>
+              </a>
+              <a class="button button-quiet" href="#ueber-mich">
+                Mehr über mich <span aria-hidden="true">↓</span>
+              </a>
+            </div>
+          </div>
+
+          <figure class="hero-photo reveal">
+            <img
+              src="hero-photo.jpg"
+              alt="Eine Person zeigt einer anderen etwas auf einem Laptopbildschirm."
+              fetchpriority="high"
+            >
+            <figcaption class="photo-caption">
+              <span>Persönlich an deiner Seite</span>
+              <strong>Technik verständlich machen.</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="about section" id="ueber-mich" aria-labelledby="about-title">
+        <div class="container about-layout">
+          <figure class="about-photo reveal">
+            <img
+              src="support-photo.jpg"
+              alt="Drei Menschen arbeiten gemeinsam an einem Laptop."
+              loading="lazy"
+            >
+            <figcaption>Gemeinsam finden wir eine Lösung.</figcaption>
+          </figure>
+
+          <div class="about-copy">
+            <div class="section-heading reveal">
+              <p class="eyebrow"><span class="eyebrow-line"></span> Das bin ich</p>
+              <h2 id="about-title">Über mich</h2>
+              <p class="section-intro">
+                Technik kann kompliziert sein. Gute Hilfe muss es nicht sein.
+              </p>
+            </div>
+
+            <div class="about-details">
+              <article class="info-card reveal">
+                <span class="info-number">01</span>
+                <div>
+                  <h3>Mein Name</h3>
+                  <p>Gian</p>
+                </div>
+              </article>
+              <article class="info-card reveal">
+                <span class="info-number">02</span>
+                <div>
+                  <h3>Warum ich TechSupport mache</h3>
+                  <p>
+                    Ich habe TechSupport gegründet, weil ich mich für Technik
+                    begeistere und es mir Freude macht, anderen Menschen zu helfen.
+                  </p>
+                  <p>
+                    Technologie ist heutzutage ein wichtiger Bestandteil unseres
+                    Alltags. Doch nicht immer funktioniert alles so, wie es soll.
+                    Genau hier möchte ich helfen.
+                  </p>
+                  <p>
+                    Mein Ziel ist es, Menschen bei technischen Fragen und Problemen
+                    zu unterstützen und gemeinsam passende Lösungen zu finden.
+                  </p>
+                  <p>
+                    Bei TechSupport stehen Hilfsbereitschaft, Zuverlässigkeit und
+                    die Freude an Technik im Mittelpunkt.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="kontakt" aria-labelledby="contact-title">
+        <div class="contact-glow" aria-hidden="true"></div>
+        <div class="container">
+          <div class="contact-panel reveal">
+            <div class="contact-copy">
+              <p class="eyebrow"><span class="status-dot"></span> Lass uns sprechen</p>
+              <h2 id="contact-title">Technische Frage?<br><span class="text-gradient">Ich bin für dich da.</span></h2>
+              <p>Ruf einfach an – ich freue mich, von dir zu hören.</p>
+            </div>
+            <div class="contact-action">
+              <a class="phone-number" href="tel:+41762978475" aria-label="Anrufen: +41 76 297 84 75">
+                +41 76 297 84 75
+              </a>
+              <a class="button button-primary call-button" href="tel:+41762978475">
+                <span class="phone-icon" aria-hidden="true">☎</span>
+                Jetzt anrufen
+                <span class="button-arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+          <footer class="footer">
+            <a class="brand footer-brand" href="#start">
+              <span class="brand-mark" aria-hidden="true">T</span>
+              <span>Tech<span class="brand-accent">Support</span></span>
+            </a>
+            <p>Dein Ansprechpartner rund um Technik.</p>
+            <a class="back-to-top" href="#start">Zurück nach oben ↑</a>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
