@@ -1,26 +1,15 @@
 # TechSupport
 
-Eine responsive, statische Website mit HTML, CSS und JavaScript. Es werden keine Frameworks oder Build-Schritte benötigt.
-
-## Inhalte anpassen
-
-Öffne `index.html`, wenn du die Angaben im Bereich **Über mich** später ändern möchtest:
-
-- `Gian` durch deinen Namen
-- den Text unter `Warum ich TechSupport mache` durch deine eigene Beschreibung
-
-Die Telefonnummer und der Anruf-Link sind bereits eingerichtet.
+Eine übersichtliche, responsive Website für TechSupport mit separaten Kontaktmöglichkeiten per Telefon und E-Mail. Die Website besteht aus HTML, CSS und JavaScript und benötigt keinen Build-Schritt.
 
 ## Lokal in Visual Studio Code öffnen
 
 1. Visual Studio Code starten.
-2. **Datei → Ordner öffnen…** wählen und den Ordner `TechSupport` öffnen.
-3. `index.html` öffnen und in einem Browser anzeigen.
-
-Für automatisches Neuladen während der Entwicklung kannst du in VS Code die Erweiterung **Live Server** verwenden: Rechtsklick auf `index.html` und **Open with Live Server** wählen. Die Website funktioniert auch ohne Erweiterung, indem du `index.html` direkt im Browser öffnest.
+2. **Datei → Ordner öffnen…** wählen und `C:\Coding\TechSupportWebsite` öffnen.
+3. `index.html` direkt im Browser öffnen oder in VS Code mit der Erweiterung **Live Server** starten.
 
 ## Veröffentlichen
 
-Lade `index.html`, `styles.css`, `script.js` und die beiden Bilddateien `hero-photo.jpg` und `support-photo.jpg` auf einen statischen Webhost deiner Wahl hoch. Alternativ kannst du den Projektordner in ein GitHub-Repository laden und in den Repository-Einstellungen unter **Pages** die Veröffentlichung aktivieren. Es wird kein Server und kein Build-Prozess benötigt.
+Lade `index.html`, `styles.css`, `script.js`, `hero-photo.jpg` und `support-photo.jpg` gemeinsam auf einen statischen Webhost. Die Bilder sind lokal eingebunden und müssen mit veröffentlicht werden.
 
-Die Fotos sind lokal eingebunden und werden von Unsplash bereitgestellt. Die Website selbst benötigt keine externen Schriftarten, Bibliotheken oder Build-Schritte.
+Die Fotos stammen von Unsplash: [Foto 1](https://images.unsplash.com/photo-1516321318423-f06f85e504b3) und [Foto 2](https://images.unsplash.com/photo-1522202176988-66273c2fd55f).
