@@ -478,12 +478,10 @@ h1 span { display: block; color: var(--blue); }
 .footer-top:hover { color: var(--blue); }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(14px);
   transition: opacity 550ms ease, transform 550ms ease;
 }
 
-.reveal.is-visible { opacity: 1; transform: translateY(0); }
+.reveal.is-visible { opacity: 1; transform: none; }
 
 @media (max-width: 900px) {
   .hero { padding: 78px 0 84px; }
@@ -1091,7 +1089,6 @@ h1 span {
 }
 
 .reveal {
-  transform: translateY(20px);
   transition-duration: 650ms;
 }
 
