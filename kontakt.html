@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kontaktiere Gian von PCSupport.art telefonisch oder bereite eine Supportanfrage per E-Mail vor.">
+    <meta name="theme-color" content="#111b25">
+    <link rel="canonical" href="https://pcsupport.art/kontakt.html">
+    <title>Kontakt & Support | TechSupport · PCSupport.art</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Direkt zum Inhalt</a>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Hauptnavigation">
+        <a class="brand" href="index.html" aria-label="TechSupport – Startseite"><span class="brand-mark" aria-hidden="true">T</span><span>Tech<span class="brand-accent">Support</span></span></a>
+        <button class="nav-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a class="nav-link" href="services.html">Leistungen</a><a class="nav-link" href="wissen.html">Wissen</a><a class="nav-link" href="about.html">Über mich</a><a class="nav-link" href="faq.html">FAQ</a>
+          <a class="nav-cta" href="kontakt.html" aria-current="page">Support anfragen <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </header>
+    <main id="inhalt">
+      <section class="page-hero page-hero-compact">
+        <div class="container">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Kontakt & Support</p>
+          <h1>Erzähl mir,<br><span>was los ist.</span></h1>
+          <p>Ruf direkt an oder bereite eine Nachricht vor. Deine Anfrage wird nicht auf dieser Website gespeichert oder automatisch versendet.</p>
+        </div>
+      </section>
+      <section class="page-section contact-page">
+        <div class="container contact-page-grid">
+          <div class="direct-contact">
+            <h2>Direkt erreichen</h2>
+            <p>Wähle den Weg, der für dich passt.</p>
+            <a class="direct-contact-link" href="tel:+41762978475"><span>Telefon</span><strong>+41 76 297 84 75</strong><span class="contact-arrow" aria-hidden="true">↗</span></a>
+            <a class="direct-contact-link" href="mailto:abceww@proton.me?subject=Anfrage%20an%20TechSupport"><span>E-Mail</span><strong>abceww@proton.me</strong><span class="contact-arrow" aria-hidden="true">↗</span></a>
+            <div class="notice-box"><strong>Datenschutz-Tipp</strong><p>Bitte sende keine Passwörter, Wiederherstellungscodes oder vertraulichen Zugangsdaten per E-Mail.</p></div>
+          </div>
+          <form class="support-form" id="support-form">
+            <h2>Supportanfrage vorbereiten</h2>
+            <p>Die Angaben werden nur in einen E-Mail-Entwurf übernommen. Sie werden nicht an einen Server übertragen.</p>
+            <div class="form-grid">
+              <label for="request-name">Dein Name <span aria-hidden="true">*</span><input id="request-name" name="name" autocomplete="name" required maxlength="100"></label>
+              <label for="request-email">Deine E-Mail-Adresse <span aria-hidden="true">*</span><input id="request-email" name="email" type="email" autocomplete="email" required maxlength="254"></label>
+              <label for="request-category">Thema <span aria-hidden="true">*</span>
+                <select id="request-category" name="category" required>
+                  <option value="">Bitte auswählen</option><option>Windows</option><option>Linux (Arch Linux / Ubuntu)</option><option>PC-Hardware</option><option>Gaming-PC</option><option>WLAN / Netzwerk</option><option>Softwareinstallation</option><option>Allgemeine Technikfrage</option><option>Anderes</option>
+                </select>
+              </label>
+              <label for="request-subject">Betreff <input id="request-subject" name="subject" maxlength="120" placeholder="Zum Beispiel: WLAN-Verbindung bricht ab"></label>
+              <label class="form-wide" for="request-description">Was ist passiert? <span aria-hidden="true">*</span><textarea id="request-description" name="description" rows="6" required maxlength="4000" placeholder="Beschreibe kurz, was du beobachtest und was du bereits versucht hast. Keine Passwörter oder Zugangsdaten eingeben."></textarea></label>
+            </div>
+            <button class="button button-primary" type="submit" disabled>E-Mail-Entwurf erstellen <span aria-hidden="true">↗</span></button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+            <a class="button button-secondary draft-link" id="draft-link" hidden>Mailprogramm öffnen <span aria-hidden="true">↗</span></a>
+            <p class="form-disclaimer">Du musst den geöffneten Entwurf in deinem Mailprogramm noch selbst prüfen und senden. Falls kein Mailprogramm eingerichtet ist, schreib direkt an <a href="mailto:abceww@proton.me">abceww@proton.me</a>.</p>
+            <noscript><p class="form-disclaimer">Zum Erstellen des E-Mail-Entwurfs muss JavaScript aktiviert sein. Du kannst direkt an <a href="mailto:abceww@proton.me">abceww@proton.me</a> schreiben.</p></noscript>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">T</span><span>Tech<span class="brand-accent">Support</span></span></a><p>Technik verständlich. Hilfe persönlich.</p><div class="footer-links"><a href="rechtliches.html">Impressum & Datenschutz</a><a href="faq.html">Häufige Fragen</a></div></div></footer>
+  </body>
+</html>

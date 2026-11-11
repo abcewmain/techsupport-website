@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="de-CH">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Durchsuchbare PC-Anleitungen zu Windows, Linux, Netzwerk, Hardware, PC-Bau und Sicherheit.">
+    <meta name="theme-color" content="#111b25">
+    <link rel="canonical" href="https://pcsupport.art/wissen.html">
+    <title>Wissensbereich & Anleitungen | TechSupport · PCSupport.art</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#inhalt">Direkt zum Inhalt</a>
+    <header class="site-header"><nav class="nav container" aria-label="Hauptnavigation">
+      <a class="brand" href="index.html" aria-label="TechSupport – Startseite"><span class="brand-mark" aria-hidden="true">T</span><span>Tech<span class="brand-accent">Support</span></span></a>
+      <button class="nav-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false" aria-controls="nav-links"><span></span><span></span></button>
+      <div class="nav-links" id="nav-links"><a class="nav-link" href="services.html">Leistungen</a><a class="nav-link active" href="wissen.html" aria-current="page">Wissen</a><a class="nav-link" href="about.html">Über mich</a><a class="nav-link" href="faq.html">FAQ</a><a class="nav-cta" href="kontakt.html">Support anfragen <span aria-hidden="true">↗</span></a></div>
+    </nav></header>
+    <main id="inhalt">
+      <section class="page-hero page-hero-compact"><div class="container"><p class="eyebrow"><span class="eyebrow-line"></span> Wissensbereich</p><h1>Schritt für Schritt<br><span>besser verstehen.</span></h1><p>Durchsuche praktische Anleitungen zu PC, Betriebssystem, Netzwerk und Sicherheit. Die Hinweise sind allgemeine Orientierung, keine Ferndiagnose.</p></div></section>
+      <section class="page-section knowledge-section">
+        <div class="container">
+          <div class="knowledge-controls">
+            <label class="knowledge-search" for="guide-search"><span aria-hidden="true">⌕</span><input id="guide-search" type="search" placeholder="Anleitungen durchsuchen …" autocomplete="off"><span class="visually-hidden">Anleitungen durchsuchen</span></label>
+            <div class="filter-list" role="group" aria-label="Anleitungen nach Thema filtern">
+              <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">Alle Themen</button>
+              <button class="filter-button" type="button" data-filter="windows" aria-pressed="false">Windows</button>
+              <button class="filter-button" type="button" data-filter="linux" aria-pressed="false">Linux</button>
+              <button class="filter-button" type="button" data-filter="network" aria-pressed="false">Netzwerk</button>
+              <button class="filter-button" type="button" data-filter="hardware" aria-pressed="false">Hardware & Bau</button>
+              <button class="filter-button" type="button" data-filter="security" aria-pressed="false">Sicherheit</button>
+            </div>
+            <p class="search-count" id="guide-count" role="status" aria-live="polite"></p>
+          </div>
+
+          <div class="guide-grid" id="guide-list">
+            <article class="guide-card" id="windows-update" data-category="windows" data-search="windows update hängt aktualisierung neustart problem fehlerbehebung">
+              <span class="guide-category">Windows</span><h2>Windows-Update hängt: sichere erste Schritte</h2><p>Prüfe zuerst die einfachen Ursachen, bevor du Änderungen am System vornimmst.</p>
+              <details class="guide-details"><summary>Anleitung anzeigen</summary><ol><li>Speichere offene Dateien und starte den PC einmal neu.</li><li>Prüfe, ob eine stabile Internetverbindung besteht und genügend Speicherplatz frei ist.</li><li>Öffne <strong>Einstellungen → Windows Update</strong> und notiere dir einen angezeigten Fehlercode.</li><li>Installiere nur Updates, die Windows selbst über die Einstellungen anbietet. Vermeide unbekannte „Updater“ von Drittseiten.</li><li>Bleibt das Problem bestehen, halte Fehlercode und Zeitpunkt für eine Supportanfrage fest.</li></ol><p class="guide-caution">Systemordner nicht manuell löschen und keine Reparaturbefehle aus unbekannten Anleitungen ungeprüft ausführen.</p></details>
+            </article>
+            <article class="guide-card" id="linux-updates" data-category="linux" data-search="linux ubuntu arch linux updates aktualisieren pacman apt paketmanager">
+              <span class="guide-category">Linux · Ubuntu & Arch</span><h2>Systemupdates unter Ubuntu und Arch Linux</h2><p>Aktualisiere das ganze System mit dem Paketmanager deiner Distribution.</p>
+              <details class="guide-details"><summary>Anleitung anzeigen</summary><ol><li>Schliesse deine Arbeit und sichere wichtige Daten. Lies vor dem Bestätigen, welche Pakete geändert oder entfernt werden.</li><li>Ubuntu: Terminal öffnen und <code>sudo apt update</code> ausführen. Danach <code>sudo apt upgrade</code> starten und die vorgeschlagenen Änderungen prüfen.</li><li>Arch Linux: <code>sudo pacman -Syu</code> verwenden. Arch Linux sollte als vollständiges System aktualisiert werden.</li><li>Stelle sicher, dass Strom und Netzwerk verfügbar sind. Schalte den Computer während eines Systemupdates nicht aus.</li><li>Wenn etwas unerwartet entfernt werden soll oder ein Fehler erscheint, brich ab und sichere die genaue Meldung.</li></ol><p class="guide-caution">Unter Arch keine Paketdatenbank-Aktualisierung ohne gleichzeitiges Systemupgrade erzwingen: partielle Upgrades werden nicht unterstützt.</p></details>
+            </article>
+            <article class="guide-card" id="network-basics" data-category="network" data-search="wlan wifi langsam verbindung router netzwerk internet instabil">
+              <span class="guide-category">Netzwerk</span><h2>WLAN langsam oder instabil? So grenzt du es ein</h2><p>Vergleiche, ob das Problem ein einzelnes Gerät oder das ganze Netzwerk betrifft.</p>
+              <details class="guide-details"><summary>Anleitung anzeigen</summary><ol><li>Prüfe, ob andere Geräte im selben WLAN ebenfalls betroffen sind.</li><li>Teste, ob das Problem in der Nähe des Routers weiterhin auftritt.</li><li>Starte Router und betroffenes Gerät kontrolliert neu; warte, bis die Verbindung wieder aufgebaut ist.</li><li>Wenn möglich, vergleiche WLAN mit einer kabelgebundenen Verbindung.</li><li>Notiere betroffene Geräte, ungefähre Uhrzeiten und Fehlermeldungen, bevor du Router-Einstellungen änderst.</li></ol><p class="guide-caution">Setze den Router nicht vorschnell auf Werkseinstellungen zurück. Das kann Zugangsdaten und individuelle Einstellungen löschen.</p></details>
+            </article>
+            <article class="guide-card" id="pc-check" data-category="hardware" data-search="hardware pc komponenten pc bau zusammenbau ram strom kabel boot">
+              <span class="guide-category">Hardware & PC-Bau</span><h2>PC startet nicht? Eine vorsichtige Grundprüfung</h2><p>Beginne bei äusseren Verbindungen, bevor du das Gehäuse öffnest.</p>
+              <details class="guide-details"><summary>Anleitung anzeigen</summary><ol><li>Schalte den Computer aus und prüfe Stromkabel, Steckdose und den Netzschalter am Netzteil.</li><li>Kontrolliere, ob Monitor und Bildschirmkabel richtig angeschlossen sind.</li><li>Notiere, ob Lüfter anlaufen, Statusleuchten blinken oder Signaltöne zu hören sind.</li><li>Öffne das Gehäuse nur, wenn du dich damit sicher fühlst. Ziehe vorher den Netzstecker und berühre keine Kontakte oder Netzteil-Innenteile.</li><li>Bei Rauch, ungewöhnlichem Geruch, Flüssigkeit oder beschädigten Teilen: nicht weiter einschalten.</li></ol></details>
+            </article>
+            <article class="guide-card" id="temperatures" data-category="hardware" data-search="gaming pc temperatur hitze lüfter leistung optimierung staub">
+              <span class="guide-category">Hardware & Gaming</span><h2>Gaming-PC wird laut oder warm</h2><p>Beobachte das Verhalten und die Kühlung, bevor du Leistungseinstellungen veränderst.</p>
+              <details class="guide-details"><summary>Anleitung anzeigen</summary><ol><li>Prüfe, ob die Lüftungsschlitze frei sind und der PC genügend Platz zur Luftzirkulation hat.</li><li>Vergleiche, ob die Lüfterlautstärke nur bei Spielen oder auch im Leerlauf steigt.</li><li>Schliesse nicht benötigte Anwendungen und kontrolliere im Task-Manager, welche Programme CPU oder GPU beanspruchen.</li><li>Nutze Temperaturwerte nur mit vertrauenswürdigen Hersteller- oder Systemwerkzeugen und vergleiche sie mit den Angaben für deine konkreten Komponenten.</li><li>Verändere Spannungs-, Takt- oder Lüftereinstellungen nicht blind.</li></ol></details>
+            </article>
+            <article class="guide-card" id="safe-downloads" data-category="security" data-search="software installieren downloads sicherheit malware programme quelle">
+              <span class="guide-category">Sicherheit & Software</span><h2>Software sicher herunterladen</h2><p>Die Quelle ist wichtiger als ein Download-Button in einer Werbeanzeige.</p>
+              <details class="guide-details"><summary>Anleitung anzeigen</summary><ol><li>Suche die offizielle Website des Softwareherstellers oder den offiziellen App-Store deiner Plattform.</li><li>Prüfe den Namen der Website sorgfältig. Anzeigen und ähnlich geschriebene Domains können irreführend sein.</li><li>Lies während der Installation jeden Schritt und lehne ungewünschte Zusatzsoftware ab.</li><li>Gib Administratorrechte nur Programmen, deren Herkunft und Zweck du geprüft hast.</li><li>Halte Betriebssystem und Schutzsoftware aktuell und sichere wichtige Dateien regelmässig.</li></ol></details>
+            </article>
+            <article class="guide-card" id="build-guide" data-category="hardware" data-search="pc bauen gaming teile kompatibilität netzteil mainboard gehäuse checkliste">
+              <span class="guide-category">Hardware & PC-Bau</span><h2>Vor dem PC-Zusammenbau: Kompatibilität prüfen</h2><p>Eine kurze Teileliste hilft, teure Überraschungen beim Zusammenbau zu vermeiden.</p>
+              <details class="guide-details"><summary>Checkliste anzeigen</summary><ul><li>Prozessorsockel und Mainboard-Kompatibilität inklusive nötiger BIOS-Version prüfen.</li><li>Arbeitsspeicher auf unterstützten Typ und Einbauvorgaben des Mainboards abstimmen.</li><li>Grafikkartenlänge, Kühlerhöhe und Radiatorplätze mit dem Gehäuse vergleichen.</li><li>Netzteilanschlüsse und Leistungsanforderungen anhand der Herstellerdaten abgleichen.</li><li>Betriebssystem, Datenspeicher, Lüftung und benötigte Anschlüsse einplanen.</li></ul><p>Modellnummern sorgfältig vergleichen und im Zweifel vor dem Kauf nachfragen.</p></details>
+            </article>
+            <article class="guide-card" id="account-security" data-category="security" data-search="passwort konto sicherheit multifaktor mfa phishing backup">
+              <span class="guide-category">Sicherheit</span><h2>Konten besser schützen: eine kurze Checkliste</h2><p>Wenige gute Gewohnheiten machen den Zugang zu Konten deutlich robuster.</p>
+              <details class="guide-details"><summary>Checkliste anzeigen</summary><ul><li>Für jedes wichtige Konto ein eigenes, langes Passwort nutzen; ein seriöser Passwortmanager kann helfen.</li><li>Mehr-Faktor-Authentifizierung aktivieren, wenn der Dienst sie anbietet.</li><li>Einmalcodes, Wiederherstellungscodes und Passwörter niemals an Supportpersonen weitergeben.</li><li>Vorsicht bei unerwarteten Links und Anhängen; öffne den Dienst lieber direkt über die bekannte Adresse.</li><li>Wichtige Dateien getrennt und regelmässig sichern und gelegentlich eine Wiederherstellung prüfen.</li></ul></details>
+            </article>
+          </div>
+          <p class="empty-state" id="guide-empty" hidden>Keine passende Anleitung gefunden. Ändere den Suchbegriff oder <a href="kontakt.html">frag direkt nach Unterstützung</a>.</p>
+          <aside class="notice-box"><strong>Hinweis</strong><p>Anleitungen können je nach Gerät, Version und Konfiguration abweichen. Sichere wichtige Daten und führe nur Schritte aus, die du nachvollziehst. Bei Unsicherheit lieber erst fragen.</p></aside>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"><div class="container footer-inner"><a class="brand footer-brand" href="index.html"><span class="brand-mark" aria-hidden="true">T</span><span>Tech<span class="brand-accent">Support</span></span></a><p>Technik verständlich. Hilfe persönlich.</p><div class="footer-links"><a href="rechtliches.html">Impressum & Datenschutz</a><a href="kontakt.html">Kontakt</a></div></div></footer>
+  </body>
+</html>
